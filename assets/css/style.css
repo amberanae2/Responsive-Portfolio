@@ -1,268 +1,232 @@
 body {
- 
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 18px;
-    line-height: 150%;
-    color: #333;
-    background-image:url("../images/geeks-2894621.jpg");
-    height:100vh;
-    background-position: center;
-    background-size:cover;
-    font-weight: bold;
-   
+  font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black;
 }
 
- * {
-    box-sizing: border-box;
-  }
-  
-  .container {
-    width: 100%;
-    max-width:960px;
-    margin: 0 auto;
-    clear: both;
-  }
-    
-  h1,
-  h2,
-  h3,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin: 0 0 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 25px;
+}
+
+@media (min-width: 768px) {
   p {
-    margin-bottom: 20px;
-
-  }
-  
-  p:last-child {
-    margin-bottom: 0;
-  }
-  
-  h1,
-  h2,
-  h3 {
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-weight: 700;
-    color:whitesmoke;
-  }
-  
-  h1 {
-    padding-bottom: 20px;
-    font-size: 30px;
-    line-height: 49px;
-    border-bottom: 3px solid #ddd;
-  }
-  
-  h2,
-  h3 {
-    font-size: 30px;
-  }
-
-  #masthead {
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    margin: 0 0 30px;
-    overflow: auto;
-    color: #fff;
-    background: #fff;
-    border-bottom: 2px solid #ccc;
-  }
-  
-  #logo {
-    float: left;
-    width: 250px;
-    height: 90px;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 90px;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    background: #4aaaa5;
-  }
-  
-  
-  nav {
-    float:right;
-    margin-top: 25px;
-  }
-  
-  nav {
-    float: right;
-    margin-top: 25px;
-  }
-  
-  nav a {
-    display: inline-block;
-    padding-left: 15px;
-    margin-left: 15px;
-    line-height: 18px;
-    color: black;
-    text-decoration: none;
-    border-left: 1px solid #efefef;
-    font-size: medium;
-  }
-  
-  nav a:first-child {
-    border-left: 0 none;
-  } 
-  
-  
-  footer {
-    padding: 30px 0;
-    clear: both;
-    font-size: 12px;
-    color: #fff;
-    text-align: center;
-    background: black;
-    }
-
-  
-  
-  .sidebar {
-    float: right;
-    width: 100%;
-    max-width: 270px;
-    padding: 30px;
-    margin-bottom: 20px;
-    background:teal;
-    border: 1px solid #ddd;
-    
-  }
-  
-  
-  h3,
-  .sidebar h2 {
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    line-height: 22px;
-    border-bottom: 2px solid teal;
-  }
-  
-  .social {
-      width: 62px;
-      height: 62px;
-      margin-top: 8px;
-      margin-right: 5px;
-    }
-    
-    .social:last-child {
-      margin-right: 0;
-    }
-  
-    #main-container {
-      padding-top: 130px;
-    }
-    
-  
-  .main-container {
-    float: left;
-    max-width: 650px;
-    margin: 0 0 40px;
-    background: #dddddd;
-    width:100%;
-    padding: 30px;
-    border: 1px solid;
-    font-size-adjust: initial;
-    clear: both;
-    }
-   
-
-  .work {
-    position:relative;
-    float: left;
-    width: 274px;
-    margin: 20px 0 25px;
-    overflow: auto;
-    box-sizing: border-box;
-  }
-  
-  .work:nth-child(even) {
-    margin-right: 40px;
-  }
-  
-  .work img {
-    width: 100%;
-    border: 0 none;
-    opacity: 0.8;
-    position: relative;
-    z-index: -1;
-  }
-  
-  .work h3 {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 0;
-    font-weight: 300;
-    line-height: 30px;
-    color: #fff;
-    text-align: center;
-    background: #4aaaa5;
-    border-bottom: 0;
-  }
-  
-  .auth-image {
-    float: left;
-    width: 200px;
-    height: auto;
-    margin-top: 10px;
-    margin-right: 25px;
-  }
-  
-  #contact-form ul {
-    margin-bottom: 20px;
-  }
-  
-  #contact-form li {
-    margin-bottom: 10px;
-  }
-  
-  label,
-  input[type=text],
-  input[type=email],
-  textarea {
-    display: block;
-    width: 100%;
-  }
-  
-  input[type=text],
-  input[type=email],
-  textarea {
-    height: 35px;
-    padding: 0 10px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-  }
-  
-  textarea {
-    height: 200px;
-  }
-  
-  input[type=submit] {
-    padding: 10px 30px;
     font-size: 18px;
-    color: #fff;
-    cursor: pointer;
-    background: #4aaaa5;
-    border: 0 none;
+    line-height: 1.6;
+    margin: 0 0 35px;
   }
-  @media screen and (max-width: 980px) {
+}
 
-  }
-  
-   @media screen and (max-width: 768px) {
-    
-  }
-  @media screen and (max-width: 640x) {
-    
-  }
-  
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #42DCA3;
+}
 
-  
-  
-  
+a:focus, a:hover {
+  text-decoration: none;
+  color: #1d9b6c;
+}
 
-  
-  
-  
+#mainNav {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: black;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 14px;
+  padding: 11px;
+  color: white;
+  border: 1px solid white;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+}
+
+#mainNav a {
+  color: white;
+}
+
+#mainNav .navbar-nav .nav-item {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    letter-spacing: 1px;
+    border-bottom: none;
+    background: transparent;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: black;
+  }
+  #mainNav .nav-link.active {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  #mainNav .nav-link.active:hover {
+    color: white;
+  }
+}
+
+.masthead {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+
+
+
+.content-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.download-section {
+  color: white;
+  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+}
+
+@media (min-width: 992px) {
+  .content-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  #map {
+    height: 350px;
+  }
+}
+
+.btn {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.btn-default {
+  color: #42DCA3;
+  border: 1px solid #42DCA3;
+  background-color: transparent;
+}
+
+.btn-default:focus, .btn-default:hover {
+  color: black;
+  border: 1px solid #42DCA3;
+  outline: none;
+  background-color: #42DCA3;
+}
+
+ul.banner-social-buttons {
+  margin-top: 0;
+}
+
+@media (max-width: 1199px) {
+  ul.banner-social-buttons {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  ul.banner-social-buttons li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-social-buttons li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+footer {
+  padding: 50px 0;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+::-moz-selection {
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+  text-shadow: none;
+}
+
+::selection {
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
