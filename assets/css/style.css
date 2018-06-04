@@ -1,10 +1,13 @@
+@media only screen and (max-width: 600px) {
 
+}
 body {
 	background-color: black;
 	
 	font: 30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: black;
 	text-rendering: optimizelegibility;
+	padding-bottom: 70px;
 	
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 	-webkit-text-size-adjust: none;
@@ -109,3 +112,31 @@ nav li a:hover {color: #000;}
 
 .w3-quarter img{margin-bottom: -6px; cursor: pointer}
 .w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+
+
+h4 {
+   font-size: 18px;
+}
+
+p {
+	font-size: 14px;
+}
+
+#contact{
+	display:inline-block;
+	text-align:center;
+}
+
+.page-pusher {
+
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
+    color: white;
+    text-align: center;
+}
