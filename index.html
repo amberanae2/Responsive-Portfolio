@@ -11,147 +11,108 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="javascript/responsive.js"></script>
   </head>
 
-  <body id="page-top">
+  <body>
+    
+      <header class="slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+        <ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+          <li></li><li></li><li></li>
+        </ul>
+        <h1>Amber R Phillips</h1>
+      </header>
+    
+      <nav class="slide">
+        <ul>
+          <li><a href="index.html" class="active">My Work</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </nav>
+        
 
-    <!-- Navigation -->
-    <nav class="navbar">
-      <span id="navbar-toggle">
-          <i class="fas fa-bars"></i>
-      </span>
-      <a href="#" id="logo">logo</a>
-      <ul id="main-nav">
-          <li>
-              <a href="#" class="nav-links">Home</a>
-          </li>
-          <li>
-              <a href="#" class="nav-links">About Me</a>
-          </li>
-          <li>
-              <a href="#" class="nav-links">Contact Me</a>
-          </li>
-          <li>
-              <a href="#" class="nav-links">Blog</a>
-          </li>
-      </ul>
-</nav>
-
-    <!-- Intro Header -->
-    <div class="jumbotron">
-      <h1 class="display-4">Amber R Phillips</h1>
-      <p class="lead"> Full Stack Web Developer</p>
-      <hr class="my-4">
-    </div>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal">Full Stack Developer</h1>
+        <p class="lead font-weight-normal">mission statement here</p>
+        <br>
+        <br>
+        <a href="#My Work" class="btn btn-circle js-scroll-trigger">
+            <i class="fa fa-angle-double-down animated"></i>
+          </a>
+    <hr>
     <br>
-    <!-- About Section -->
-    <section id="about" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>About Amber</h2>
-            <img src="assets/images/phillips.png" class="center" alt="Your Name">
-           <p> Hi my Name is Amber Phillips. I am a coffee lover from Waco,TX!
+    <br>
+    <br>
+    <div class="w3-row w3-grayscale-min">
+        <div class="w3-quarter">
+          <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+          <img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+          <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+       </div>
+      <hr>
+      <br>
+      <br>
+      <br>
+      <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+          <h4><b>About Me</b></h4>
+          <img src="assets/images/phillips.png" alt="Me" class="w3-image w3-padding-32" width="180" height="200">
+          <div class="w3-content w3-justify" style="max-width:600px">
+            <h4>Amber R Phillips</h4>
+            <p>Hi my Name is Amber Phillips. I am a coffee lover from Waco,TX!
 
-            I graduated from the University of Texas at Arlington(Go Mavs!).
-    
-            I have a ridiculous love for coffee, I love traveling, and I am 
-    
-            a total fan girl of any outdoor activity. I have been in the 
-    
-            financial industry of insurance for 5 years but now I am
-    
-            in the wild world of Web development. Fun Fact about me: I once 
-    
-            broke my wrist taking a boxing class. I didnt realize it was broken
-    
-            for almost 3 days.
-          </p>
-           
-        </div>
-      </div>
-    </div>
-  </section>
-<hr>
-<br>
-<br>
-
-<div class="container">
-  <div class="row">
-  <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <h1 class="gallery-title">Projects</h1>
-  </div>
-  <figure>
-    <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
-    <figcaption>Daytona Beach <small>United States</small></figcaption>
-  </figure>
-  <figure>
-    <img src="https://images.unsplash.com/photo-1443890923422-7819ed4101c0?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
-    <figcaption>Териберка, gorod Severomorsk <small>Russia</small></figcaption>
-  </figure>
-  <figure>
-    <img src="https://images.unsplash.com/photo-1445964047600-cdbdb873673d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
-    <figcaption>
-      Bad Pyrmont <small>Deutschland</small>
-    </figcaption>
-  </figure>
-  <figure>
-    <img src="https://images.unsplash.com/photo-1439798060585-62ab242d7724?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
-    <figcaption>Yellowstone National Park <small>United States</small></figcaption>
-  </figure>
-
-  </div>
-</div>
-</section>
-<hr>
-<br>
-<br>
-<section id="contact" class="content-section text-center">
-  <div class="contact-section">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <p>Feel free to checkout my profiles below.</p>
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <form class="form-horizontal">
-              <div class="form-group">
-                <label for="exampleInputName2">Name</label>
-                <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                I graduated from the University of Texas at Arlington(Go Mavs!).
+        
+                I have a ridiculous love for coffee, I love traveling, and I am 
+        
+                a total fan girl of any outdoor activity. I have been in the 
+        
+                financial industry of insurance for 5 years but now I am
+        
+                in the wild world of Web development. Fun Fact about me: I once 
+        
+                broke my wrist taking a boxing class. I didnt realize it was broken
+        
+                for almost 3 days.
+            </p>
+      <hr>
+      <br>
+      <br>
+      <br>
+      <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+          <div class="w3-content" style="max-width:600px">
+            <h4 class="w3-center"><b>Contact Me</b></h4>
+            <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+            <form action="/action_page.php" target="_blank">
+              <div class="w3-section">
+                <label>Name</label>
+                <input class="w3-input w3-border" type="text" name="Name" required>
               </div>
-              <div class="form-group">
-                <label for="exampleInputEmail2">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+              <div class="w3-section">
+                <label>Email</label>
+                <input class="w3-input w3-border" type="text" name="Email" required>
               </div>
-              <div class="form-group ">
-                <label for="exampleInputText">Your Message</label>
-               <textarea  class="form-control" placeholder="Description"></textarea> 
+              <div class="w3-section">
+                <label>Message</label>
+                <input class="w3-input w3-border" type="text" name="Message" required>
               </div>
-              <button type="submit" class="btn btn-default">Send Message</button>
+              <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
             </form>
-
-            <hr>
-              <h3>My Social Sites</h3>
-            <ul class="list-inline banner-social-buttons">
-              <li><a href="https://github.com/amberanae2" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">github</span></i></a></li>
-              <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
-              <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">Youtube</span></i></a></li>
-            </ul>
           </div>
         </div>
-      </div>
-  </div>
-</section>
-
+      
+       
+         
 
     <!-- Footer -->
-    <footer>
+    <!-- <footer>
       <div class="container text-center">
         <p>Copyright &copy; Amber P. 2018</p>
       </div>
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -163,6 +124,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="javascript/responsive.js"></script>
+
 
   </body>
 
