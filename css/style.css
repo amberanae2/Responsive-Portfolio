@@ -2,8 +2,8 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   line-height: 34px;
-  color: white;
-  background:black;
+  background:url("../assets/images/wood-1759566_1920.jpg");
+  color:whitesmoke
 }
 
 * {
@@ -72,7 +72,7 @@ h3 {
 }
 
 .navbar {
-  background-color:black;
+  background-color: lightseagreen;
   color: white;
   border: none;
 }
